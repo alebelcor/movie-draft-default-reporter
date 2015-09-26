@@ -40,7 +40,7 @@ module.exports = function (movies) {
 
   var isAnyMovieIdInvalid = movies.some(function (movie) {
     return ({}).toString(movie) !== '[object Object]' ||
-      (typeof movie.title === 'string' && movie.title.length < 5) ||
+      (typeof movie.title === 'string' && movie.title.length < 1) ||
       (typeof movie.domesticGross !== 'number');
   });
 
