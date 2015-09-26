@@ -1,0 +1,40 @@
+{
+  "name": "movie-draft-default-reporter",
+  "version": "0.0.0",
+  "description": "Print movie draft data output to the console",
+  "keywords": [
+    "box office mojo",
+    "draft",
+    "movie",
+    "movies",
+    "movie title",
+    "movie gross",
+    "reporter"
+  ],
+  "bugs": "https://github.com/alebelcor/movie-draft-default-reporter/issues",
+  "license": "MIT",
+  "author": {
+    "name": "Alejandro Beltrán",
+    "email": "alebelcor@gmail.com",
+    "url": "https://github.com/alebelcor"
+  },
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alebelcor/movie-draft-default-reporter.git"
+  },
+  "scripts": {
+    "test": "ava"
+  },
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "cli-color": "0.2.3",
+    "text-table": "^0.2.0"
+  },
+  "devDependencies": {
+    "ava": "^0.2.0"
+  }
+}
