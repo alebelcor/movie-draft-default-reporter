@@ -4,6 +4,8 @@
 
 [![Build Status](https://travis-ci.org/alebelcor/movie-draft-default-reporter.svg)](https://travis-ci.org/alebelcor/movie-draft-default-reporter)
 
+![](screenshot.jpg)
+
 ## Install
 
 ```bash
