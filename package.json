@@ -1,6 +1,6 @@
 {
   "name": "movie-draft-default-reporter",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Print movie draft data output to the console",
   "keywords": [
     "box office mojo",
