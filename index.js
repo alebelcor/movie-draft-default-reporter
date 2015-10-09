@@ -1,8 +1,9 @@
 'use strict';
 
-var chalk = require('chalk');
-var table = require('text-table');
 var ansiTrim = require('cli-color/lib/trim');
+var chalk = require('chalk');
+var isPlainObj = require('is-plain-obj');
+var table = require('text-table');
 
 function getFormattedHeading(title) {
   return chalk.underline.white(title);
@@ -25,7 +26,6 @@ function print(output) {
 
   if (process.env.NODE_ENV !== 'test') {
     console.log(table(output, textTableOptions));
-    console.log();
   }
 }
 
@@ -39,9 +39,8 @@ module.exports = function (movies) {
   }
 
   var isAnyMovieIdInvalid = movies.some(function (movie) {
-    return ({}).toString(movie) !== '[object Object]' ||
-      (typeof movie.title === 'string' && movie.title.length < 1) ||
-      (typeof movie.domesticGross !== 'number');
+    return !isPlainObj(movie) || (typeof movie.title === 'string' && movie.title.length < 1) ||
+      typeof movie.domesticGross !== 'number';
   });
 
   if (isAnyMovieIdInvalid) {

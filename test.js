@@ -26,6 +26,8 @@ test('it should error if movies is not a valid array', function (t) {
   t.throws(function () { return defaultReporter([{title: 'bar'}]); });
   t.throws(function () { return defaultReporter([{title: 'bar', foo: 0}]); });
   t.throws(function () { return defaultReporter([{title: 'bar', domesticGross: 'foo'}]); });
+  t.throws(function () { return defaultReporter([{title: 'bar', domesticGross: true}]); });
+  t.throws(function () { return defaultReporter([{title: 'bar', domesticGross: null}]); });
 
   t.doesNotThrow(function () { return defaultReporter([{title: 'f', domesticGross: 0}]); });
   t.doesNotThrow(function () { return defaultReporter([{title: 'bar', domesticGross: 0}]); });
