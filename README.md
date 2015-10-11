@@ -2,7 +2,9 @@
 
 > Print movie draft data output to the console.
 
-[![Build Status](https://travis-ci.org/alebelcor/movie-draft-default-reporter.svg)](https://travis-ci.org/alebelcor/movie-draft-default-reporter)
+[![npm version](https://img.shields.io/npm/v/movie-draft-default-reporter.svg)](https://npmjs.org/package/movie-draft-default-reporter)
+[![Build Status](https://img.shields.io/travis/alebelcor/movie-draft-default-reporter/master.svg)](https://travis-ci.org/alebelcor/movie-draft-default-reporter)
+[![Test Coverage](https://img.shields.io/coveralls/alebelcor/movie-draft-default-reporter/master.svg)](https://coveralls.io/github/alebelcor/movie-draft-default-reporter)
 
 ![](screenshot.jpg)
 

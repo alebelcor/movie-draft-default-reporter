@@ -27,7 +27,8 @@
     "url": "https://github.com/alebelcor/movie-draft-default-reporter.git"
   },
   "scripts": {
-    "test": "ava"
+    "test": "nyc ava",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
   "dependencies": {
     "chalk": "^1.1.1",
@@ -36,6 +37,8 @@
     "text-table": "^0.2.0"
   },
   "devDependencies": {
-    "ava": "^0.2.0"
+    "ava": "^0.2.0",
+    "coveralls": "^2.11.4",
+    "nyc": "^3.2.2"
   }
 }
