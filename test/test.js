@@ -1,9 +1,7 @@
 'use strict';
 
 var test = require('ava');
-var defaultReporter = require('./');
-
-process.env.NODE_ENV = 'test';
+var defaultReporter = require('../');
 
 test('it should error if movies is not an array', function (t) {
   t.throws(function () { return defaultReporter(void 0); });
