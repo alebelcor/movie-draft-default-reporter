@@ -24,9 +24,7 @@ function print(output) {
     }
   };
 
-  if (process.env.NODE_ENV !== 'test') {
-    console.log(table(output, textTableOptions));
-  }
+  console.log(table(output, textTableOptions));
 }
 
 module.exports = function (movies) {
